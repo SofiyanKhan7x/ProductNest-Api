@@ -43,7 +43,7 @@ public class ProductController {
         service.updateProduct(product);
     }
 
-    //Delete product from the database
+    //Delete product from the h2 database
     @DeleteMapping("/products/{productId}")
     public void deleteProduct(@PathVariable int productId){
         service.deleteProduct(productId);
