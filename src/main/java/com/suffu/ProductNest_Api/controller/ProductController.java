@@ -22,10 +22,10 @@ public class ProductController {
         return service.getProduct(product);
     }
 
-//    @GetMapping("/products/{productId}")
-//    public Product getProductById(@PathVariable int product){
-//        return service.getProductById(product);
-//    }
+    @GetMapping("/products/{productId}")
+    public Product getProductById(@PathVariable int productId){
+        return service.getProductById(productId);
+    }
 
     @PostMapping("/products")
     public void addProduct(@RequestBody  Product product){
